@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+
+        <div class="top">
+
+            <div class="alarm">
+                <i class="fa fa-circle text-danger-glow blink"></i>
+                <p>Intrusion détectée ! Fermeture de la fenetre dans :</p>
+            </div>
+
+            <div id="timer"></div>
+
+        </div>
+
+        <div class="container2" >
+            <div class="split">
+                <div class="block">
+                    <progress class="progress-bar" max="200" value="0"></progress>
+                </div>
+            
+                <div class="but">
+                    <span class="switch" id="mode">
+                        <span class="switch-border1" >
+                            <span class="switch-border2">
+                                <input id="switch2" type="checkbox"/>
+                                <label for="switch2"></label>
+                                <span class="switch-top"></span>
+                                <span class="switch-shadow"></span>
+                                <span class="switch-handle"></span>
+                                <span class="switch-handle-left"></span>
+                                <span class="switch-handle-right"></span>
+                                <span class="switch-handle-top"></span>
+                                <span class="switch-handle-bottom"></span>
+                                <span class="switch-handle-base"></span>
+                                <span class="switch-led switch-led-green">
+                                    <span class="switch-led-border">
+                                        <span class="switch-led-light">
+                                            <span class="switch-led-glow"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="switch-led switch-led-red">
+                                    <span class="switch-led-border">
+                                        <span class="switch-led-light">
+                                            <span class="switch-led-glow"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="keypad_wrapper">
+                <div class="screen"></div>
+                <div class="flasher"></div>
+                <div class="error notification robot">ERROR</div>
+                <div class="success notification robot">SUCCESS</div>
+                
+                <div class="key">1</div>
+                <div class="key">2</div>
+                <div class="key">3</div>
+                <div class="key">4</div>
+                <div class="key">5</div>
+                <div class="key">6</div>
+                <div class="key">7</div>
+                <div class="key">8</div>
+                <div class="key">9</div>
+                <div class="key last">0</div>
+            </div>
+
+        </div>
+
+        <div class="container3">
+            <div class="buttons">
+
+                <form action="script.php" method="post" type="submit">
+                    <input class="step" id="Step1" name="Step1" value=""/>
+                    <input class="step" id="Step2" name="Step2" value=""/>
+                    <input class="step" id="Step3" name="Step3" value=""/>
+                    <input class="button2" id="button" type="submit" name="submit" value="Reset">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
